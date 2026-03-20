@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "native-fsr-mod",
+  "version": "${version}",
+  "name": "Native FSR",
+  "description": "Добавляет нативную поддержку AMD FidelityFX Super Resolution (FSR) последней версии для Minecraft 1.20.1",
+  "authors": [
+    "Developer"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yourusername/native-fsr-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/native-fsr-mod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.githubuser.nativefsr.NativeFSRMod"
+    ]
+  },
+  "mixins": [
+    "native-fsr-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
